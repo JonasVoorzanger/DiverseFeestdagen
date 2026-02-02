@@ -77,7 +77,7 @@
     "icon": "mdi-earth"
   },
   {
-    "naam": "Antidiscriminatiedag [UNAIDS]",
+    "naam": "Antidiscriminatiedag",
     "type": "VN",
     "datum": "2026-03-01",
     "link": "https://www.unaids.org/en/zero-discrimination-day",
@@ -161,7 +161,7 @@
     "icon": "mdi-earth"
   },
   {
-    "naam": "Internationale dag van de bossen [FAO]",
+    "naam": "Internationale dag van de bossen",
     "type": "VN",
     "datum": "2026-03-21",
     "link": "https://www.fao.org/international-day-of-forests/en",
@@ -175,7 +175,7 @@
     "icon": "mdi-earth"
   },
   {
-    "naam": "Wereldpoëziedag [UNESCO]",
+    "naam": "Wereldpoëziedag",
     "type": "VN",
     "datum": "2026-03-21",
     "link": "https://www.unesco.org/en/days/poetry",
@@ -266,7 +266,7 @@
     "icon": "mdi-earth"
   },
   {
-    "naam": "Wereldgezondheidsdag [WHO]",
+    "naam": "Wereldgezondheidsdag",
     "type": "VN",
     "datum": "2026-04-07",
     "link": "https://www.who.int/campaigns/world-health-day",
@@ -308,7 +308,7 @@
     "icon": "mdi-earth"
   },
   {
-    "naam": "Wereldmalariadag [WHO]",
+    "naam": "Wereldmalariadag",
     "type": "VN",
     "datum": "2026-04-25",
     "link": "https://www.who.int/campaigns/world-malaria-day/world-malaria-day-2021",
@@ -392,21 +392,21 @@
     "icon": "mdi-earth"
   },
   {
-    "naam": "Internationale dag van het licht [UNESCO]",
+    "naam": "Internationale dag van het licht",
     "type": "VN",
     "datum": "2026-05-16",
     "link": "https://www.unesco.org/en/days/light",
     "icon": "mdi-earth"
   },
   {
-    "naam": "Werelddag voor bijen [FAO]",
+    "naam": "Werelddag voor bijen",
     "type": "VN",
     "datum": "2026-05-20",
     "link": "https://www.fao.org/world-bee-day/en",
     "icon": "mdi-earth"
   },
   {
-    "naam": "Internationale dag van de thee [FAO]",
+    "naam": "Internationale dag van de thee",
     "type": "VN",
     "datum": "2026-05-21",
     "link": "https://www.fao.org/international-tea-day/en",
@@ -448,7 +448,7 @@
     "icon": "mdi-moon-waning-crescent"
   },
   {
-    "naam": "Internationale dag van de aardappel [FAO]",
+    "naam": "Internationale dag van de aardappel",
     "type": "VN",
     "datum": "2026-05-30",
     "link": "https://www.fao.org/international-potato-day/en",
@@ -490,7 +490,7 @@
     "icon": "mdi-earth"
   },
   {
-    "naam": "Werelddag van de bloedgever [WHO]",
+    "naam": "Werelddag van de bloedgever",
     "type": "VN",
     "datum": "2026-06-14",
     "link": "https://www.who.int/campaigns/world-blood-donor-day",
@@ -609,7 +609,7 @@
     "icon": "mdi-earth"
   },
   {
-    "naam": "Wereldalfabetiseringsdag [UNESCO]",
+    "naam": "Wereldalfabetiseringsdag",
     "type": "VN",
     "datum": "2026-09-08",
     "link": "https://www.unesco.org/en/days/literacy",
@@ -693,14 +693,14 @@
     "icon": "mdi-calendar-star"
   },
   {
-    "naam": "Wereldlerarendag [UNESCO]",
+    "naam": "Wereldlerarendag",
     "type": "VN",
     "datum": "2026-10-05",
     "link": "https://www.unesco.org/en/days/teachers",
     "icon": "mdi-earth"
   },
   {
-    "naam": "Wereldvoedseldag [FAO]",
+    "naam": "Wereldvoedseldag",
     "type": "VN",
     "datum": "2026-10-16",
     "link": "https://nl.wikipedia.org/wiki/Wereldvoedseldag",
@@ -712,6 +712,13 @@
     "datum": "2026-10-17",
     "link": "https://www.un.org/en/observances/day-for-eradicating-poverty",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "CAPS LOCK DAY",
+    "type": "Fun",
+    "datum": "2026-10-22",
+    "link": "https://www.daysoftheyear.com/days/caps-lock-day/",
+    "icon": "mdi-party-popper"
   },
   {
     "naam": "Dag van de Verenigde Naties",
@@ -756,11 +763,18 @@
     "icon": "mdi-earth"
   },
   {
-    "naam": "Werelddag voor de filosofie [UNESCO]",
+    "naam": "Werelddag voor de filosofie",
     "type": "VN",
     "datum": "2026-11-21",
     "link": "https://www.unesco.org/en/days/philosophy",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Buy Nothing Day",
+    "type": "Fun",
+    "datum": "2026-11-22",
+    "link": "https://en.wikipedia.org/wiki/Buy_Nothing_Day",
+    "icon": "mdi-party-popper"
   },
   {
     "naam": "Internationale dag van solidariteit met het Palestijnse volk",

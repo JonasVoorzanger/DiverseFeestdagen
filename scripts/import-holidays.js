@@ -19,7 +19,8 @@ const TYPE_ICONS = {
   'Algemeen': 'mdi-calendar-star',
   'Iers': 'mdi-clover',
   'Christendom': 'mdi-cross',
-  'Amerikaans': 'mdi-flag-variant'
+  'Amerikaans': 'mdi-flag-variant',
+  'Fun': 'mdi-party-popper'
 };
 
 function parseCSV(csvText) {

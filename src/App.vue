@@ -1,67 +1,114 @@
 <template lang="pug">
 v-app
   v-app-bar(color="primary" dark)
-    v-app-bar-title Diverse Feestdagen
-    v-spacer
-    v-btn(icon)
-      v-icon mdi-calendar-heart
+    v-toolbar-title.flex-grow-1 Feest- en themadagen
+    v-btn(icon @click="toggleLookupMode" :title="isLookupMode ? 'Naar normale weergave' : 'Naar zoek weergave'")
+      v-icon(size="small") {{ isLookupMode ? 'mdi-view-dashboard' : 'mdi-magnify' }}
   
   v-main
-    v-container
-      v-row(justify="center")
-        v-col(cols="12" md="10" lg="8")
-          v-card.mb-4
-            v-card-title.text-h4.text-center Diverse Feestdagen
-            v-card-subtitle.text-center Ontdek verschillende feestdagen uit de hele wereld
-            
-            v-card-text
-              v-row.mb-4(align="center")
-                v-col(cols="12" sm="6")
-                  v-text-field(
-                    v-model.number="daysAhead"
-                    label="Aantal dagen vooruit"
-                    type="number"
-                    :min="1"
-                    :max="365"
-                    density="comfortable"
-                    variant="outlined"
+    v-container(fluid)
+      v-card
+        v-card-text
+          v-alert(v-if="loading" type="info" variant="tonal")
+            | Feestdagen laden...
+          
+          v-alert(v-else-if="error" type="error" variant="tonal")
+            | {{ error }}
+          
+          div(v-else)
+            div(v-if="isLookupMode")
+              v-row.mb-4
+                v-col(cols="12" md="4")
+                  v-checkbox(
+                    v-model="hidePastHolidays"
+                    label="Verberg oude feestdagen"
+                    density="compact"
+                    hide-details
                   )
-                v-col(cols="12" sm="6")
-                  v-chip.ma-1(
-                    v-for="type in uniqueTypes"
-                    :key="type"
-                    size="small"
-                  ) {{ type }}
+                v-col(cols="12" md="4")
+                  v-select(
+                    v-model="selectedTypes"
+                    :items="allTypes"
+                    label="Filter op type"
+                    multiple
+                    chips
+                    clearable
+                    variant="outlined"
+                    density="compact"
+                    hide-details
+                  )
+                v-col(cols="12" md="4")
+                  v-text-field(
+                    v-model="searchText"
+                    label="Zoek op naam"
+                    prepend-inner-icon="mdi-magnify"
+                    clearable
+                    density="compact"
+                    hide-details
+                  )
               
               v-divider.mb-4
               
-              v-alert(v-if="loading" type="info" variant="tonal")
-                | Feestdagen laden...
-              
-              v-alert(v-else-if="error" type="error" variant="tonal")
-                | {{ error }}
-              
-              v-list(v-else-if="upcomingHolidays.length > 0")
-                v-list-item(
-                  v-for="(item, index) in upcomingHolidays"
-                  :key="index"
-                  :prepend-icon="item.icon"
-                  @click="openLink(item)"
-                  :class="{ 'clickable': item.link }"
-                )
-                  v-list-item-title {{ item.naam }}
-                  v-list-item-subtitle 
-                    | {{ formatDate(item.datum) }} ({{ item.type }})
-                    v-icon(v-if="item.link" size="small" class="ml-2") mdi-open-in-new
+              div(v-if="Object.keys(groupedByMonth).length > 0")
+                div(v-for="(holidays, month) in groupedByMonth" :key="month")
+                  v-subheader.text-h4.mb-2.mt-4 {{ month }}
+                  v-list
+                    v-list-item(
+                      v-for="(item, index) in holidays"
+                      :key="'lookup-' + index"
+                      :prepend-icon="item.icon"
+                      @click="openLink(item)"
+                      :class="{ 'clickable': item.link }"
+                    )
+                      v-list-item-title.font-weight-bold {{ item.naam }}
+                      v-list-item-subtitle {{ formatDate(item.datum) }} ({{ item.type }})
               
               v-alert(v-else type="info" variant="tonal")
-                | Geen feestdagen gevonden in de komende {{ daysAhead }} {{ daysAhead === 1 ? 'dag' : 'dagen' }}.
-  
-  v-footer(app)
-    v-row(justify="center")
-      v-col.text-center
-        span.text-caption © 2026 Diverse Feestdagen - Open voor iedereen
-</template>
+                | Geen feestdagen gevonden met de huidige filters.
+            
+            div(v-else)
+              div(v-if="groupedHolidays.today.length > 0")
+                v-subheader.text-h4.mb-2 Vandaag
+                v-list
+                  v-list-item(
+                    v-for="(item, index) in groupedHolidays.today"
+                    :key="'today-' + index"
+                    :prepend-icon="item.icon"
+                    @click="openLink(item)"
+                    :class="{ 'clickable': item.link }"
+                  )
+                    v-list-item-title.font-weight-bold {{ item.naam }}
+                    v-list-item-subtitle {{ formatDate(item.datum) }} ({{ item.type }})
+              
+              div(v-if="groupedHolidays.tomorrow.length > 0")
+                v-subheader.text-h4.mb-2.mt-4 Morgen
+                v-list
+                  v-list-item(
+                    v-for="(item, index) in groupedHolidays.tomorrow"
+                    :key="'tomorrow-' + index"
+                    :prepend-icon="item.icon"
+                    @click="openLink(item)"
+                    :class="{ 'clickable': item.link }"
+                  )
+                    v-list-item-title.font-weight-bold {{ item.naam }}
+                    v-list-item-subtitle {{ formatDate(item.datum) }} ({{ item.type }})
+              
+              div(v-if="groupedHolidays.later.length > 0")
+                v-subheader.text-h4.mb-2.mt-4(v-if="groupedHolidays.today.length > 0 || groupedHolidays.tomorrow.length > 0") Later
+                v-list
+                  v-list-item(
+                    v-for="(item, index) in groupedHolidays.later"
+                    :key="'later-' + index"
+                    :prepend-icon="item.icon"
+                    @click="openLink(item)"
+                    :class="{ 'clickable': item.link }"
+                  )
+                    v-list-item-title.font-weight-bold {{ item.naam }}
+                    v-list-item-subtitle {{ formatDate(item.datum) }} ({{ item.type }})
+              
+              v-alert(v-if="totalDisplayedHolidays === 0" type="info" variant="tonal")
+                | Geen feestdagen gevonden in de komende {{ maxHolidays }} {{ maxHolidays === 1 ? 'dag' : 'dagen' }}.
+  </template>
 
 <script>
 export default {
@@ -70,39 +117,161 @@ export default {
   data() {
     return {
       allHolidays: [],
-      daysAhead: 3,
+      maxHolidays: 10,
       loading: true,
-      error: null
+      error: null,
+      isLookupMode: false,
+      hidePastHolidays: true,
+      selectedTypes: [],
+      searchText: ''
     }
   },
   
   computed: {
-    upcomingHolidays() {
+    allTypes() {
+      const types = [...new Set(this.allHolidays.map(h => h.type))]
+      return types.sort()
+    },
+    
+    filteredHolidays() {
+      if (!this.isLookupMode) return []
+      
+      let filtered = this.allHolidays
+      
+      if (this.hidePastHolidays) {
+        const today = new Date()
+        today.setHours(0, 0, 0, 0)
+        filtered = filtered.filter(h => {
+          const date = new Date(h.datum)
+          return date >= today
+        })
+      }
+      
+      if (this.selectedTypes.length > 0) {
+        filtered = filtered.filter(h => this.selectedTypes.includes(h.type))
+      }
+      
+      if (this.searchText) {
+        const search = this.searchText.toLowerCase()
+        filtered = filtered.filter(h => 
+          h.naam.toLowerCase().includes(search)
+        )
+      }
+      
+      return filtered.sort((a, b) => new Date(a.datum) - new Date(b.datum))
+    },
+    
+    groupedByMonth() {
+      if (!this.isLookupMode) return {}
+      
+      const grouped = {}
+      this.filteredHolidays.forEach(holiday => {
+        const date = new Date(holiday.datum)
+        const monthNames = ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 
+                           'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December']
+        const monthKey = monthNames[date.getMonth()]
+        
+        if (!grouped[monthKey]) {
+          grouped[monthKey] = []
+        }
+        grouped[monthKey].push(holiday)
+      })
+      
+      return grouped
+    },
+    
+    groupedHolidays() {
       const today = new Date()
       today.setHours(0, 0, 0, 0)
       
-      const futureDate = new Date(today)
-      futureDate.setDate(today.getDate() + this.daysAhead)
+      const tomorrow = new Date(today)
+      tomorrow.setDate(today.getDate() + 1)
       
-      return this.allHolidays
+      const dayAfterTomorrow = new Date(today)
+      dayAfterTomorrow.setDate(today.getDate() + 2)
+      
+      const sortedHolidays = this.allHolidays
         .filter(holiday => {
           const holidayDate = new Date(holiday.datum)
-          return holidayDate >= today && holidayDate <= futureDate
+          return holidayDate >= today
         })
         .sort((a, b) => new Date(a.datum) - new Date(b.datum))
+      
+      const todayHolidays = sortedHolidays.filter(h => {
+        const date = new Date(h.datum)
+        return date.getTime() === today.getTime()
+      })
+      
+      const tomorrowHolidays = sortedHolidays.filter(h => {
+        const date = new Date(h.datum)
+        return date.getTime() === tomorrow.getTime()
+      })
+      
+      const laterHolidays = sortedHolidays.filter(h => {
+        const date = new Date(h.datum)
+        return date >= dayAfterTomorrow
+      })
+      
+      let result = {
+        today: todayHolidays,
+        tomorrow: [],
+        later: []
+      }
+      
+      const remainingSlots = Math.max(0, this.maxHolidays - todayHolidays.length)
+      
+      if (remainingSlots > 0) {
+        const tomorrowCount = Math.min(tomorrowHolidays.length, remainingSlots)
+        result.tomorrow = tomorrowHolidays.slice(0, tomorrowCount)
+        
+        const laterRemainingSlots = remainingSlots - tomorrowCount
+        if (laterRemainingSlots > 0) {
+          result.later = laterHolidays.slice(0, laterRemainingSlots)
+        }
+      }
+      
+      return result
     },
     
-    uniqueTypes() {
-      const types = [...new Set(this.upcomingHolidays.map(h => h.type))]
-      return types.sort()
+    totalDisplayedHolidays() {
+      return this.groupedHolidays.today.length + 
+             this.groupedHolidays.tomorrow.length + 
+             this.groupedHolidays.later.length
     }
   },
   
   methods: {
+    getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search)
+      return urlParams.get(name)
+    },
+    
+    toggleLookupMode() {
+      this.isLookupMode = !this.isLookupMode
+      const url = new URL(window.location)
+      if (this.isLookupMode) {
+        url.searchParams.set('lookup', 'true')
+      } else {
+        url.searchParams.delete('lookup')
+      }
+      window.history.pushState({}, '', url)
+    },
+    
     async loadHolidays() {
       try {
         this.loading = true
         this.error = null
+        
+        const lookupParam = this.getUrlParameter('lookup')
+        this.isLookupMode = lookupParam === 'true' || lookupParam === '1'
+        
+        const urlMax = this.getUrlParameter('n')
+        if (urlMax) {
+          const parsed = parseInt(urlMax)
+          if (!isNaN(parsed) && parsed > 0) {
+            this.maxHolidays = parsed
+          }
+        }
         
         const response = await fetch('/DiverseFeestdagen/holidays.json')
         
@@ -140,11 +309,32 @@ export default {
   
   mounted() {
     this.loadHolidays()
+    if (this.isLookupMode) {
+      document.documentElement.classList.add('lookup-mode')
+    }
+  },
+  
+  watch: {
+    isLookupMode(newVal) {
+      if (newVal) {
+        document.documentElement.classList.add('lookup-mode')
+      } else {
+        document.documentElement.classList.remove('lookup-mode')
+      }
+    }
   }
 }
 </script>
 
 <style>
+html:not(.lookup-mode) {
+  zoom: 150%;
+}
+
+html.lookup-mode {
+  zoom: 100%;
+}
+
 * {
   font-family: 'Raleway', sans-serif;
 }
@@ -153,11 +343,11 @@ export default {
   font-family: 'Raleway', sans-serif !important;
 }
 
-/* Campton for all headers */
 h1, h2, h3, h4, h5, h6,
 .v-card-title,
 .v-card-subtitle,
 .v-app-bar-title,
+.v-subheader,
 .text-h1, .text-h2, .text-h3, .text-h4, .text-h5, .text-h6 {
   font-family: 'Campton', sans-serif !important;
 }
@@ -168,5 +358,13 @@ h1, h2, h3, h4, h5, h6,
 
 .clickable:hover {
   background-color: rgba(0, 98, 171, 0.05);
+}
+
+.v-container--fluid {
+  padding: 24px !important;
+}
+
+.v-list-item-title {
+  font-size: 1.1rem !important;
 }
 </style>
