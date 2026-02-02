@@ -28,11 +28,32 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Change Your Password Day",
+    "type": "Fun",
+    "datum": "2026-02-01",
+    "link": "https://www.daysoftheyear.com/days/change-your-password-day/",
+    "icon": "mdi-party-popper"
+  },
+  {
     "naam": "Toe Bisjwat (Nieuwjaar van de Bomen)",
     "type": "Joods",
     "datum": "2026-02-02",
     "link": "https://nl.wikipedia.org/wiki/Toe_Biesjwat",
     "icon": "mdi-star-david"
+  },
+  {
+    "naam": "World Cancer Day",
+    "type": "Algemeen",
+    "datum": "2026-02-04",
+    "link": "https://en.wikipedia.org/wiki/World_Cancer_Day",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Complimentendag",
+    "type": "Fun",
+    "datum": "2026-02-06",
+    "link": "https://www.daysoftheyear.com/days/pay-a-compliment-day/",
+    "icon": "mdi-party-popper"
   },
   {
     "naam": "Internationale dag van vrouwen en meisjes in de wetenschap",

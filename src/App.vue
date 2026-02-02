@@ -117,7 +117,7 @@ export default {
   data() {
     return {
       allHolidays: [],
-      maxHolidays: 10,
+      maxHolidays: 5,
       loading: true,
       error: null,
       isLookupMode: false,
