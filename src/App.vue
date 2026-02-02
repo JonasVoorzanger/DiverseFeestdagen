@@ -289,6 +289,30 @@ export default {
       window.history.pushState({}, '', url)
     },
     
+    updateUrlWithFilters() {
+      const url = new URL(window.location)
+      
+      if (!this.hidePastHolidays) {
+        url.searchParams.set('showPast', 'true')
+      } else {
+        url.searchParams.delete('showPast')
+      }
+      
+      if (this.selectedTypes.length > 0) {
+        url.searchParams.set('types', this.selectedTypes.join(','))
+      } else {
+        url.searchParams.delete('types')
+      }
+      
+      if (this.searchText) {
+        url.searchParams.set('search', this.searchText)
+      } else {
+        url.searchParams.delete('search')
+      }
+      
+      window.history.pushState({}, '', url)
+    },
+    
     async loadHolidays() {
       try {
         this.loading = true
@@ -303,6 +327,22 @@ export default {
           if (!isNaN(parsed) && parsed > 0) {
             this.maxHolidays = parsed
           }
+        }
+        
+        // Load filter values from URL
+        const showPastParam = this.getUrlParameter('showPast')
+        if (showPastParam === 'true' || showPastParam === '1') {
+          this.hidePastHolidays = false
+        }
+        
+        const typesParam = this.getUrlParameter('types')
+        if (typesParam) {
+          this.selectedTypes = typesParam.split(',').filter(t => t.trim())
+        }
+        
+        const searchParam = this.getUrlParameter('search')
+        if (searchParam) {
+          this.searchText = searchParam
         }
         
         const response = await fetch('/DiverseFeestdagen/holidays.json')
@@ -352,6 +392,24 @@ export default {
         document.documentElement.classList.add('lookup-mode')
       } else {
         document.documentElement.classList.remove('lookup-mode')
+      }
+    },
+    
+    hidePastHolidays() {
+      if (this.isLookupMode) {
+        this.updateUrlWithFilters()
+      }
+    },
+    
+    selectedTypes() {
+      if (this.isLookupMode) {
+        this.updateUrlWithFilters()
+      }
+    },
+    
+    searchText() {
+      if (this.isLookupMode) {
+        this.updateUrlWithFilters()
       }
     }
   }
