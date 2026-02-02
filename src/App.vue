@@ -418,7 +418,7 @@ export default {
 
 <style>
 html:not(.lookup-mode) {
-  zoom: 150%;
+  zoom: 200%;
 }
 
 html.lookup-mode {
