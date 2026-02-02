@@ -1,0 +1,877 @@
+[
+  {
+    "naam": "Nieuwjaarsdag",
+    "type": "Algemeen",
+    "datum": "2026-01-01",
+    "link": "https://nl.wikipedia.org/wiki/Nieuwjaar",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Internationale dag van het onderwijs",
+    "type": "VN",
+    "datum": "2026-01-24",
+    "link": "https://www.un.org/en/observances/education-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag voor schone energie",
+    "type": "VN",
+    "datum": "2026-01-26",
+    "link": "https://www.un.org/en/observances/clean-energy-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale herdenkingsdag voor de slachtoffers van de Holocaust",
+    "type": "VN",
+    "datum": "2026-01-27",
+    "link": "https://www.un.org/en/observances/commemoration-holocaust-victims-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Toe Bisjwat (Nieuwjaar van de Bomen)",
+    "type": "Joods",
+    "datum": "2026-02-02",
+    "link": "https://nl.wikipedia.org/wiki/Toe_Biesjwat",
+    "icon": "mdi-star-david"
+  },
+  {
+    "naam": "Internationale dag van vrouwen en meisjes in de wetenschap",
+    "type": "VN",
+    "datum": "2026-02-11",
+    "link": "https://www.un.org/en/observances/women-and-girls-in-science-day/",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldradiodag",
+    "type": "VN",
+    "datum": "2026-02-13",
+    "link": "https://www.un.org/en/observances/radio-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Valentijnsdag",
+    "type": "Algemeen",
+    "datum": "2026-02-14",
+    "link": "https://nl.wikipedia.org/wiki/Valentijnsdag",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Maha Shivaratri",
+    "type": "Hindoe",
+    "datum": "2026-02-16",
+    "link": "https://nl.wikipedia.org/wiki/Maha_Shivaratri",
+    "icon": "mdi-om"
+  },
+  {
+    "naam": "Begin Ramadan",
+    "type": "Islam",
+    "datum": "2026-02-18",
+    "link": "https://nl.wikipedia.org/wiki/Ramadan",
+    "icon": "mdi-moon-waning-crescent"
+  },
+  {
+    "naam": "Werelddag voor sociale rechtvaardigheid",
+    "type": "VN",
+    "datum": "2026-02-20",
+    "link": "https://www.un.org/en/observances/social-justice-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Antidiscriminatiedag [UNAIDS]",
+    "type": "VN",
+    "datum": "2026-03-01",
+    "link": "https://www.unaids.org/en/zero-discrimination-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Magha Puja",
+    "type": "Boeddhisme",
+    "datum": "2026-03-03",
+    "link": "https://nl.wikipedia.org/wiki/Magha_Puja",
+    "icon": "mdi-meditation"
+  },
+  {
+    "naam": "Poeriem (Lotenfeest)",
+    "type": "Joods",
+    "datum": "2026-03-03",
+    "link": "https://nl.wikipedia.org/wiki/Poerim",
+    "icon": "mdi-star-david"
+  },
+  {
+    "naam": "Holi (Lentefeest)",
+    "type": "Hindoe",
+    "datum": "2026-03-04",
+    "link": "https://nl.wikipedia.org/wiki/Holi_Phagwa",
+    "icon": "mdi-om"
+  },
+  {
+    "naam": "Internationale vrouwendag",
+    "type": "Algemeen",
+    "datum": "2026-03-08",
+    "link": "https://nl.wikipedia.org/wiki/Internationale_Vrouwendag",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Internationale vrouwendag",
+    "type": "VN",
+    "datum": "2026-03-08",
+    "link": "https://www.un.org/en/observances/womens-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag ter bestrijding van islamofobie",
+    "type": "VN",
+    "datum": "2026-03-15",
+    "link": "https://www.un.org/en/observances/anti-islamophobia-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Saint Patrick's Day",
+    "type": "Iers",
+    "datum": "2026-03-17",
+    "link": "https://nl.wikipedia.org/wiki/Saint_Patrick%27s_Day",
+    "icon": "mdi-clover"
+  },
+  {
+    "naam": "Begin Navratri",
+    "type": "Hindoe",
+    "datum": "2026-03-19",
+    "link": "https://nl.wikipedia.org/wiki/Navratri",
+    "icon": "mdi-om"
+  },
+  {
+    "naam": "Eid al-Fitr (Suikerfeest)",
+    "type": "Islam",
+    "datum": "2026-03-20",
+    "link": "https://nl.wikipedia.org/wiki/Suikerfeest",
+    "icon": "mdi-moon-waning-crescent"
+  },
+  {
+    "naam": "Internationale dag van het geluk",
+    "type": "VN",
+    "datum": "2026-03-20",
+    "link": "https://www.un.org/en/observances/happiness-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Werelddag voor gletsjers",
+    "type": "VN",
+    "datum": "2026-03-21",
+    "link": "https://www.un.org/en/observances/world-glaciers-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van de bossen [FAO]",
+    "type": "VN",
+    "datum": "2026-03-21",
+    "link": "https://www.fao.org/international-day-of-forests/en",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag voor de uitbanning van rassendiscriminatie",
+    "type": "VN",
+    "datum": "2026-03-21",
+    "link": "https://www.un.org/en/observances/end-racism-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldpoëziedag [UNESCO]",
+    "type": "VN",
+    "datum": "2026-03-21",
+    "link": "https://www.unesco.org/en/days/poetry",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van Nowruz",
+    "type": "VN",
+    "datum": "2026-03-21",
+    "link": "https://www.un.org/en/observances/international-nowruz-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Werelddag van het Downsyndroom",
+    "type": "VN",
+    "datum": "2026-03-21",
+    "link": "https://www.un.org/en/observances/down-syndrome-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereld water dag",
+    "type": "Algemeen",
+    "datum": "2026-03-22",
+    "link": "https://nl.wikipedia.org/wiki/Wereldwaterdag",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Internationale dag ter herinnering van de slachtoffers van slavernij en de trans-Atlantische slavenhandel",
+    "type": "VN",
+    "datum": "2026-03-25",
+    "link": "https://www.un.org/en/observances/transatlantic-slave-trade",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale afvalvrije dag",
+    "type": "VN",
+    "datum": "2026-03-30",
+    "link": "https://www.un.org/en/observances/zero-waste-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Witte Donderdag",
+    "type": "Christendom",
+    "datum": "2026-04-02",
+    "link": "https://nl.wikipedia.org/wiki/Witte_Donderdag",
+    "icon": "mdi-cross"
+  },
+  {
+    "naam": "Begin Pesach (Joods Pasen)",
+    "type": "Joods",
+    "datum": "2026-04-02",
+    "link": "https://nl.wikipedia.org/wiki/Pesach",
+    "icon": "mdi-star-david"
+  },
+  {
+    "naam": "Wereldautismedag",
+    "type": "VN",
+    "datum": "2026-04-02",
+    "link": "https://www.un.org/en/observances/autism-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Goede Vrijdag",
+    "type": "Christendom",
+    "datum": "2026-04-03",
+    "link": "https://nl.wikipedia.org/wiki/Goede_Vrijdag",
+    "icon": "mdi-cross"
+  },
+  {
+    "naam": "Eerste Paasdag",
+    "type": "Christendom",
+    "datum": "2026-04-05",
+    "link": "https://nl.wikipedia.org/wiki/Pasen",
+    "icon": "mdi-cross"
+  },
+  {
+    "naam": "Tweede Paasdag",
+    "type": "Christendom",
+    "datum": "2026-04-06",
+    "link": "https://nl.wikipedia.org/wiki/Paasmaandag",
+    "icon": "mdi-cross"
+  },
+  {
+    "naam": "Internationale dag van de sport voor ontwikkeling en vrede",
+    "type": "VN",
+    "datum": "2026-04-06",
+    "link": "https://www.un.org/en/observances/sport-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldgezondheidsdag [WHO]",
+    "type": "VN",
+    "datum": "2026-04-07",
+    "link": "https://www.who.int/campaigns/world-health-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van de ruimtevaart",
+    "type": "VN",
+    "datum": "2026-04-12",
+    "link": "https://www.un.org/en/observances/human-spaceflight-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Werelddag van de creativiteit en innovatie",
+    "type": "VN",
+    "datum": "2026-04-21",
+    "link": "https://www.un.org/en/observances/creativity-and-innovation-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van Moeder Aarde",
+    "type": "VN",
+    "datum": "2026-04-22",
+    "link": "https://www.un.org/en/observances/earth-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Dag van de Engelse taal",
+    "type": "VN",
+    "datum": "2026-04-23",
+    "link": "https://www.un.org/en/observances/english-language-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Dag van de Spaanse taal",
+    "type": "VN",
+    "datum": "2026-04-23",
+    "link": "https://www.un.org/es/observances/spanish-language-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldmalariadag [WHO]",
+    "type": "VN",
+    "datum": "2026-04-25",
+    "link": "https://www.who.int/campaigns/world-malaria-day/world-malaria-day-2021",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag ter herdenking van de Tsjernobylramp",
+    "type": "VN",
+    "datum": "2026-04-26",
+    "link": "https://www.un.org/en/observances/chernobyl-remembrance-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Koningsdag",
+    "type": "Algemeen",
+    "datum": "2026-04-27",
+    "link": "https://nl.wikipedia.org/wiki/Koningsdag_(Nederland)",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Internationale herdenkingsdag voor slachtoffers van aardbevingen",
+    "type": "VN",
+    "datum": "2026-04-29",
+    "link": "",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van de jazz",
+    "type": "VN",
+    "datum": "2026-04-30",
+    "link": "https://www.un.org/en/observances/jazz-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Dag van de Arbeid",
+    "type": "Algemeen",
+    "datum": "2026-05-01",
+    "link": "https://nl.wikipedia.org/wiki/Dag_van_de_Arbeid",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Vesak Puja (Geboorte van Boeddha)",
+    "type": "Boeddhisme",
+    "datum": "2026-05-02",
+    "link": "https://nl.wikipedia.org/wiki/Vesakha_Puja",
+    "icon": "mdi-meditation"
+  },
+  {
+    "naam": "Werelddag van de persvrijheid",
+    "type": "VN",
+    "datum": "2026-05-03",
+    "link": "https://www.un.org/en/observances/press-freedom-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Bevrijdingsdag",
+    "type": "Algemeen",
+    "datum": "2026-05-05",
+    "link": "https://nl.wikipedia.org/wiki/Bevrijdingsdag",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Moederdag",
+    "type": "Algemeen",
+    "datum": "2026-05-10",
+    "link": "https://nl.wikipedia.org/wiki/Moederdag",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Hemelvaartsdag",
+    "type": "Christendom",
+    "datum": "2026-05-14",
+    "link": "https://nl.wikipedia.org/wiki/Hemelvaartsdag",
+    "icon": "mdi-cross"
+  },
+  {
+    "naam": "Internationale dag van het samenleven in vrede",
+    "type": "VN",
+    "datum": "2026-05-16",
+    "link": "https://www.un.org/en/observances/living-in-peace-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van het licht [UNESCO]",
+    "type": "VN",
+    "datum": "2026-05-16",
+    "link": "https://www.unesco.org/en/days/light",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Werelddag voor bijen [FAO]",
+    "type": "VN",
+    "datum": "2026-05-20",
+    "link": "https://www.fao.org/world-bee-day/en",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van de thee [FAO]",
+    "type": "VN",
+    "datum": "2026-05-21",
+    "link": "https://www.fao.org/international-tea-day/en",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Sjavoeot (Wekenfeest)",
+    "type": "Joods",
+    "datum": "2026-05-22",
+    "link": "https://nl.wikipedia.org/wiki/Sjavoeot",
+    "icon": "mdi-star-david"
+  },
+  {
+    "naam": "Eerste Pinksterdag",
+    "type": "Christendom",
+    "datum": "2026-05-24",
+    "link": "https://nl.wikipedia.org/wiki/Pinksteren",
+    "icon": "mdi-cross"
+  },
+  {
+    "naam": "Tweede Pinksterdag",
+    "type": "Christendom",
+    "datum": "2026-05-25",
+    "link": "https://nl.wikipedia.org/wiki/Pinksteren",
+    "icon": "mdi-cross"
+  },
+  {
+    "naam": "Wereldvoetbaldag",
+    "type": "VN",
+    "datum": "2026-05-25",
+    "link": "https://www.un.org/en/observances/football-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Eid al-Adha (Offerfeest)",
+    "type": "Islam",
+    "datum": "2026-05-26",
+    "link": "https://nl.wikipedia.org/wiki/Offerfeest",
+    "icon": "mdi-moon-waning-crescent"
+  },
+  {
+    "naam": "Internationale dag van de aardappel [FAO]",
+    "type": "VN",
+    "datum": "2026-05-30",
+    "link": "https://www.fao.org/international-potato-day/en",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldfietsdag",
+    "type": "VN",
+    "datum": "2026-06-03",
+    "link": "https://www.un.org/en/observances/bicycle-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldmilieudag",
+    "type": "VN",
+    "datum": "2026-06-05",
+    "link": "https://www.un.org/en/observances/environment-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldoceanendag",
+    "type": "VN",
+    "datum": "2026-06-08",
+    "link": "https://www.un.org/en/observances/oceans-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van het spel",
+    "type": "VN",
+    "datum": "2026-06-11",
+    "link": "https://www.un.org/en/observances/international-day-of-play",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Werelddag tegen kinderarbeid",
+    "type": "VN",
+    "datum": "2026-06-12",
+    "link": "https://www.un.org/en/observances/world-day-against-child-labour",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Werelddag van de bloedgever [WHO]",
+    "type": "VN",
+    "datum": "2026-06-14",
+    "link": "https://www.who.int/campaigns/world-blood-donor-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Islamitisch Nieuwjaar",
+    "type": "Islam",
+    "datum": "2026-06-16",
+    "link": "https://nl.wikipedia.org/wiki/Islamitisch_Nieuwjaar",
+    "icon": "mdi-moon-waning-crescent"
+  },
+  {
+    "naam": "Internationale dag voor de bestrijding van haatuitingen",
+    "type": "VN",
+    "datum": "2026-06-18",
+    "link": "https://www.un.org/en/observances/countering-hate-speech",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldvluchtelingendag",
+    "type": "VN",
+    "datum": "2026-06-20",
+    "link": "https://www.un.org/en/observances/refugee-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van bezinning en herdenking van de genocide in Srebrenica in 1995",
+    "type": "VN",
+    "datum": "2026-07-11",
+    "link": "https://www.un.org/en/observances/srebrenica-genocide-commemoration-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldbevolkingsdag",
+    "type": "VN",
+    "datum": "2026-07-11",
+    "link": "https://www.un.org/en/observances/world-population-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van de hoop",
+    "type": "VN",
+    "datum": "2026-07-12",
+    "link": "https://www.un.org/en/observances/hope-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale Nelson Mandeladag",
+    "type": "VN",
+    "datum": "2026-07-18",
+    "link": "https://nl.wikipedia.org/wiki/Nelson_Mandela-dag",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldschaakdag",
+    "type": "VN",
+    "datum": "2026-07-20",
+    "link": "https://www.un.org/en/observances/world-chess-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van de maan",
+    "type": "VN",
+    "datum": "2026-07-20",
+    "link": "https://www.un.org/en/observances/moon-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Asalha Puja",
+    "type": "Boeddhisme",
+    "datum": "2026-07-29",
+    "link": "https://nl.wikipedia.org/wiki/Asalha_Puja",
+    "icon": "mdi-meditation"
+  },
+  {
+    "naam": "Internationale dag van de vriendschap",
+    "type": "VN",
+    "datum": "2026-07-30",
+    "link": "https://www.un.org/en/observances/friendship-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag ter herinnering aan de slavenhandel en de afschaffing ervan [UNESCO]",
+    "type": "VN",
+    "datum": "2026-08-23",
+    "link": "https://www.unesco.org/en/days/slave-trade-remembrance",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Mawlid al-Nabi (Geboorte van de Profeet)",
+    "type": "Islam",
+    "datum": "2026-08-25",
+    "link": "https://nl.wikipedia.org/wiki/Mawlid_an-Nabi",
+    "icon": "mdi-moon-waning-crescent"
+  },
+  {
+    "naam": "Internationale dag tegen kernproeven",
+    "type": "VN",
+    "datum": "2026-08-29",
+    "link": "https://www.un.org/en/observances/end-nuclear-tests-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Krishna Janmashtami (Geboorte van Krishna)",
+    "type": "Hindoe",
+    "datum": "2026-09-04",
+    "link": "https://nl.wikipedia.org/wiki/Janmashtami",
+    "icon": "mdi-om"
+  },
+  {
+    "naam": "Internationale dag van de liefdadigheid",
+    "type": "VN",
+    "datum": "2026-09-05",
+    "link": "https://www.un.org/en/observances/charity-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldalfabetiseringsdag [UNESCO]",
+    "type": "VN",
+    "datum": "2026-09-08",
+    "link": "https://www.unesco.org/en/days/literacy",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Rosj Hasjana (Joods Nieuwjaar)",
+    "type": "Joods",
+    "datum": "2026-09-12",
+    "link": "https://nl.wikipedia.org/wiki/Rosj_Hasjana",
+    "icon": "mdi-star-david"
+  },
+  {
+    "naam": "Internationale dag van de democratie",
+    "type": "VN",
+    "datum": "2026-09-15",
+    "link": "https://www.un.org/en/observances/democracy-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van gelijke verloning",
+    "type": "VN",
+    "datum": "2026-09-18",
+    "link": "https://www.un.org/en/observances/equal-pay-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereld clean-up dag",
+    "type": "VN",
+    "datum": "2026-09-20",
+    "link": "https://www.un.org/en/observances/cleanup-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Jom Kipoer (Grote Verzoendag)",
+    "type": "Joods",
+    "datum": "2026-09-21",
+    "link": "https://nl.wikipedia.org/wiki/Jom_Kipoer",
+    "icon": "mdi-star-david"
+  },
+  {
+    "naam": "Internationale dag van de vrede",
+    "type": "VN",
+    "datum": "2026-09-21",
+    "link": "https://www.un.org/en/observances/international-day-peace",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Begin Soekot (Loofhuttenfeest)",
+    "type": "Joods",
+    "datum": "2026-09-26",
+    "link": "https://nl.wikipedia.org/wiki/Soekot",
+    "icon": "mdi-star-david"
+  },
+  {
+    "naam": "Internationale dag voor de totale vernietiging van kernwapens",
+    "type": "VN",
+    "datum": "2026-09-26",
+    "link": "https://www.un.org/en/observances/nuclear-weapons-elimination-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag voor universele toegang tot informatie",
+    "type": "VN",
+    "datum": "2026-09-28",
+    "link": "https://www.un.org/en/observances/information-access-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van geweldloosheid",
+    "type": "VN",
+    "datum": "2026-10-02",
+    "link": "https://www.un.org/en/observances/non-violence-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Dierendag",
+    "type": "Algemeen",
+    "datum": "2026-10-04",
+    "link": "https://nl.wikipedia.org/wiki/Werelddierendag",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Wereldlerarendag [UNESCO]",
+    "type": "VN",
+    "datum": "2026-10-05",
+    "link": "https://www.unesco.org/en/days/teachers",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldvoedseldag [FAO]",
+    "type": "VN",
+    "datum": "2026-10-16",
+    "link": "https://nl.wikipedia.org/wiki/Wereldvoedseldag",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag voor de strijd tegen armoede",
+    "type": "VN",
+    "datum": "2026-10-17",
+    "link": "https://www.un.org/en/observances/day-for-eradicating-poverty",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Dag van de Verenigde Naties",
+    "type": "VN",
+    "datum": "2026-10-24",
+    "link": "https://www.un.org/en/observances/un-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Halloween",
+    "type": "Amerikaans",
+    "datum": "2026-10-31",
+    "link": "https://nl.wikipedia.org/wiki/Halloween",
+    "icon": "mdi-flag-variant"
+  },
+  {
+    "naam": "Divali (Lichtjesfeest)",
+    "type": "Hindoe",
+    "datum": "2026-11-08",
+    "link": "https://nl.wikipedia.org/wiki/Divali",
+    "icon": "mdi-om"
+  },
+  {
+    "naam": "Wereldwetenschapsdag voor vrede en ontwikkeling",
+    "type": "VN",
+    "datum": "2026-11-10",
+    "link": "https://www.un.org/en/observances/world-science-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldtoiletdag",
+    "type": "VN",
+    "datum": "2026-11-19",
+    "link": "https://www.un.org/en/observances/toilet-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Universele dag van het kind",
+    "type": "VN",
+    "datum": "2026-11-20",
+    "link": "https://www.un.org/en/observances/world-childrens-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Werelddag voor de filosofie [UNESCO]",
+    "type": "VN",
+    "datum": "2026-11-21",
+    "link": "https://www.unesco.org/en/days/philosophy",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van solidariteit met het Palestijnse volk",
+    "type": "VN",
+    "datum": "2026-11-29",
+    "link": "https://www.un.org/en/observances/international-day-of-solidarity-with-the-palestinian-people",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldaidsdag",
+    "type": "VN",
+    "datum": "2026-12-01",
+    "link": "https://www.un.org/en/observances/world-aids-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag voor de afschaffing van de slavernij",
+    "type": "VN",
+    "datum": "2026-12-02",
+    "link": "https://www.un.org/en/observances/slavery-abolition-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag voor mensen met een beperking",
+    "type": "VN",
+    "datum": "2026-12-03",
+    "link": "https://www.un.org/en/observances/day-of-persons-with-disabilities",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Begin Chanoeka (Inwijdingsfeest)",
+    "type": "Joods",
+    "datum": "2026-12-05",
+    "link": "https://nl.wikipedia.org/wiki/Chanoeka",
+    "icon": "mdi-star-david"
+  },
+  {
+    "naam": "Internationale vrijwilligersdag voor economische en sociale ontwikkeling",
+    "type": "VN",
+    "datum": "2026-12-05",
+    "link": "https://www.un.org/en/observances/volunteer-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag voor herdenking en waardigheid van slachtoffers van genocide",
+    "type": "VN",
+    "datum": "2026-12-09",
+    "link": "https://www.un.org/en/observances/genocide-prevention-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag tegen corruptie",
+    "type": "VN",
+    "datum": "2026-12-09",
+    "link": "https://www.un.org/en/observances/anti-corruption-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Dag van de rechten van de mens",
+    "type": "VN",
+    "datum": "2026-12-10",
+    "link": "https://www.un.org/en/observances/human-rights-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag tegen kolonialisme in al zijn vormen en manifestaties",
+    "type": "VN",
+    "datum": "2026-12-14",
+    "link": "https://www.un.org/en/observances/anti-colonialism-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Dag van de Arabische taal",
+    "type": "VN",
+    "datum": "2026-12-18",
+    "link": "https://www.un.org/en/observances/arabiclanguageday",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Internationale dag van migranten",
+    "type": "VN",
+    "datum": "2026-12-18",
+    "link": "https://www.un.org/en/observances/migrants-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Wereldmeditatiedag",
+    "type": "VN",
+    "datum": "2026-12-21",
+    "link": "https://www.un.org/en/observances/meditation-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Eerste Kerstdag",
+    "type": "Christendom",
+    "datum": "2026-12-25",
+    "link": "https://nl.wikipedia.org/wiki/Eerste_kerstdag",
+    "icon": "mdi-cross"
+  },
+  {
+    "naam": "Tweede Kerstdag",
+    "type": "Christendom",
+    "datum": "2026-12-26",
+    "link": "https://nl.wikipedia.org/wiki/Tweede_kerstdag",
+    "icon": "mdi-cross"
+  },
+  {
+    "naam": "Internationale dag voor epidemieparaatheid",
+    "type": "VN",
+    "datum": "2026-12-27",
+    "link": "https://www.un.org/en/observances/epidemic-preparedness-day",
+    "icon": "mdi-earth"
+  }
+]

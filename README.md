@@ -10,6 +10,20 @@ Een eenvoudige Vue applicatie met Vuetify en Pug templating voor het weergeven v
 - Vite (build tool)
 - GitHub Pages deployment
 
+## Data Import
+
+De feestdagen worden geïmporteerd van een Google Sheets CSV. Voor het bouwen:
+
+```bash
+npm run import-holidays
+```
+
+Dit script:
+- Haalt de data op van de Google Sheets CSV
+- Converteert naar JSON formaat
+- Slaat op in `public/holidays.json`
+- Wordt automatisch uitgevoerd voor elke build (via `prebuild` script)
+
 ## Installatie
 
 ```bash
@@ -26,11 +40,15 @@ npm run dev
 
 De applicatie is beschikbaar op `http://localhost:5173`
 
+**Let op:** Run eerst `npm run import-holidays` om de feestdagen data te laden.
+
 ## Build voor productie
 
 ```bash
 npm run build
 ```
+
+Het `prebuild` script zorgt ervoor dat de holidays data automatisch wordt geïmporteerd voor elke build.
 
 ## Preview productie build
 
