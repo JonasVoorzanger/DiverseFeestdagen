@@ -100,6 +100,21 @@ export default {
 }
 </script>
 
-<style scoped>
-/* Add custom styles here if needed */
+<style>
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.v-application {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+/* Campton for all headers */
+h1, h2, h3, h4, h5, h6,
+.v-card-title,
+.v-card-subtitle,
+.v-app-bar-title,
+.text-h1, .text-h2, .text-h3, .text-h4, .text-h5, .text-h6 {
+  font-family: 'Campton', sans-serif !important;
+}
 </style>

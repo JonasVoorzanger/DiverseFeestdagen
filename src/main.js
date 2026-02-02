@@ -11,7 +11,16 @@ const vuetify = createVuetify({
   components,
   directives,
   theme: {
-    defaultTheme: 'light'
+    defaultTheme: 'light',
+    themes: {
+      light: {
+        colors: {
+          primary: '#0062ab',
+          secondary: '#80c9ff',
+          background: '#f1f9ff'
+        }
+      }
+    }
   }
 })
 
