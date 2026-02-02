@@ -93,8 +93,21 @@ v-app
                     v-list-item-title.font-weight-bold {{ item.naam }}
                     v-list-item-subtitle {{ formatDate(item.datum) }} ({{ item.type }})
               
+              div(v-if="groupedHolidays.dayAfterTomorrow.length > 0")
+                v-subheader.text-h4.mb-2.mt-4 Overmorgen
+                v-list
+                  v-list-item(
+                    v-for="(item, index) in groupedHolidays.dayAfterTomorrow"
+                    :key="'dayAfterTomorrow-' + index"
+                    :prepend-icon="item.icon"
+                    @click="openLink(item)"
+                    :class="{ 'clickable': item.link }"
+                  )
+                    v-list-item-title.font-weight-bold {{ item.naam }}
+                    v-list-item-subtitle {{ formatDate(item.datum) }} ({{ item.type }})
+              
               div(v-if="groupedHolidays.later.length > 0")
-                v-subheader.text-h4.mb-2.mt-4(v-if="groupedHolidays.today.length > 0 || groupedHolidays.tomorrow.length > 0") Later
+                v-subheader.text-h4.mb-2.mt-4(v-if="groupedHolidays.today.length > 0 || groupedHolidays.tomorrow.length > 0 || groupedHolidays.dayAfterTomorrow.length > 0") Later
                 v-list
                   v-list-item(
                     v-for="(item, index) in groupedHolidays.later"
@@ -190,6 +203,9 @@ export default {
       const dayAfterTomorrow = new Date(today)
       dayAfterTomorrow.setDate(today.getDate() + 2)
       
+      const threeDaysAhead = new Date(today)
+      threeDaysAhead.setDate(today.getDate() + 3)
+      
       const sortedHolidays = this.allHolidays
         .filter(holiday => {
           const holidayDate = new Date(holiday.datum)
@@ -199,22 +215,31 @@ export default {
       
       const todayHolidays = sortedHolidays.filter(h => {
         const date = new Date(h.datum)
+        date.setHours(0, 0, 0, 0)
         return date.getTime() === today.getTime()
       })
       
       const tomorrowHolidays = sortedHolidays.filter(h => {
         const date = new Date(h.datum)
+        date.setHours(0, 0, 0, 0)
         return date.getTime() === tomorrow.getTime()
+      })
+      
+      const dayAfterTomorrowHolidays = sortedHolidays.filter(h => {
+        const date = new Date(h.datum)
+        date.setHours(0, 0, 0, 0)
+        return date.getTime() === dayAfterTomorrow.getTime()
       })
       
       const laterHolidays = sortedHolidays.filter(h => {
         const date = new Date(h.datum)
-        return date >= dayAfterTomorrow
+        return date >= threeDaysAhead
       })
       
       let result = {
         today: todayHolidays,
         tomorrow: [],
+        dayAfterTomorrow: [],
         later: []
       }
       
@@ -224,9 +249,15 @@ export default {
         const tomorrowCount = Math.min(tomorrowHolidays.length, remainingSlots)
         result.tomorrow = tomorrowHolidays.slice(0, tomorrowCount)
         
-        const laterRemainingSlots = remainingSlots - tomorrowCount
-        if (laterRemainingSlots > 0) {
-          result.later = laterHolidays.slice(0, laterRemainingSlots)
+        const afterTomorrowRemaining = remainingSlots - tomorrowCount
+        if (afterTomorrowRemaining > 0) {
+          const dayAfterTomorrowCount = Math.min(dayAfterTomorrowHolidays.length, afterTomorrowRemaining)
+          result.dayAfterTomorrow = dayAfterTomorrowHolidays.slice(0, dayAfterTomorrowCount)
+          
+          const laterRemainingSlots = afterTomorrowRemaining - dayAfterTomorrowCount
+          if (laterRemainingSlots > 0) {
+            result.later = laterHolidays.slice(0, laterRemainingSlots)
+          }
         }
       }
       
@@ -236,6 +267,7 @@ export default {
     totalDisplayedHolidays() {
       return this.groupedHolidays.today.length + 
              this.groupedHolidays.tomorrow.length + 
+             this.groupedHolidays.dayAfterTomorrow.length + 
              this.groupedHolidays.later.length
     }
   },
