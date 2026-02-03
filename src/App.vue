@@ -1,7 +1,13 @@
 <template lang="pug">
 v-app
   v-app-bar(color="primary" dark)
-    v-toolbar-title.flex-grow-1 Feest- en themadagen
+    v-toolbar-title.flex-grow-1
+      span Feest- en themadagen
+    v-toolbar-subtitle
+      span.font-weight-light.ml-3.translucent(
+        @click="openLink({ link: 'https://linktr.ee/feestdagen' })"
+        style="cursor: pointer;"
+      ) linktr.ee/feestdagen
     v-btn(icon @click="toggleLookupMode" :title="isLookupMode ? 'Naar normale weergave' : 'Naar zoek weergave'")
       v-icon(size="small") {{ isLookupMode ? 'mdi-view-dashboard' : 'mdi-magnify' }}
   
@@ -476,7 +482,11 @@ html.lookup-mode {
 }
 
 html:not(.lookup-mode) .v-app-bar {
-  font-size: 1.25rem;
+  font-size: 25px !important;
+}
+
+html:not(.lookup-mode) .v-app-bar * {
+  font-size: inherit !important;
 }
 
 * {
@@ -546,5 +556,9 @@ html.lookup-mode .v-container {
 .v-chip .v-icon {
   margin-left: 4px !important;
   margin-right: 4px !important;
+}
+
+.translucent{
+  opacity: 0.7;
 }
 </style>
