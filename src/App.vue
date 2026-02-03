@@ -468,11 +468,15 @@ export default {
 
 <style>
 html:not(.lookup-mode) {
-  zoom: 200%;
+  font-size: clamp(1rem, 4vmin, 6rem);
 }
 
 html.lookup-mode {
-  zoom: 100%;
+  font-size: 16px;
+}
+
+html:not(.lookup-mode) .v-app-bar {
+  font-size: 1.25rem;
 }
 
 * {
@@ -532,7 +536,7 @@ html.lookup-mode .v-container {
 }
 
 .v-list-item__prepend {
-  margin-right: -8px !important;
+  margin-right: 2px !important;
 }
 
 .v-list-item__prepend > .v-icon {
