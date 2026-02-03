@@ -20,7 +20,10 @@ const TYPE_ICONS = {
   'Iers': 'mdi-clover',
   'Christendom': 'mdi-cross',
   'Amerikaans': 'mdi-flag-variant',
-  'Fun': 'mdi-party-popper'
+  'Fun': 'mdi-party-popper',
+  'Amsterdam': 'mdi-bicycle',
+  'HAL': 'mdi-school',
+  'Sport': 'mdi-stadium-variant'
 };
 
 function parseCSV(csvText) {

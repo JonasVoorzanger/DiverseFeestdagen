@@ -17,18 +17,29 @@ v-app
           
           div(v-else)
             div(v-if="isLookupMode")
+              v-row.mb-3
+                v-col(cols="12")
+                  v-btn(
+                    color="secondary"
+                    prepend-icon="mdi-plus-circle"
+                    @click="openSuggestionForm"
+                    block
+                  ) Stel een nieuwe feestdag voor
+              
               v-row.mb-4
                 v-col(cols="12" md="4")
                   v-checkbox(
                     v-model="hidePastHolidays"
-                    label="Verberg oude feestdagen"
+                    label="Verberg verleden"
                     density="compact"
                     hide-details
                   )
                 v-col(cols="12" md="4")
                   v-select(
                     v-model="selectedTypes"
-                    :items="allTypes"
+                    :items="allTypesWithIcons"
+                    item-title="type"
+                    item-value="type"
                     label="Filter op type"
                     multiple
                     chips
@@ -37,6 +48,17 @@ v-app
                     density="compact"
                     hide-details
                   )
+                    template(v-slot:chip="{ item }")
+                      v-chip
+                        v-icon(start size="small") {{ item.raw.icon }}
+                        | {{ item.raw.type }}
+                    template(v-slot:item="{ item, props }")
+                      v-list-item(v-bind="props" :title="item.raw.type")
+                        template(v-slot:prepend="{ isActive }")
+                          v-list-item-action(start)
+                            v-checkbox-btn(:model-value="isActive")
+                        template(v-slot:append)
+                          v-icon {{ item.raw.icon }}
                 v-col(cols="12" md="4")
                   v-text-field(
                     v-model="searchText"
@@ -121,6 +143,13 @@ v-app
               
               v-alert(v-if="totalDisplayedHolidays === 0" type="info" variant="tonal")
                 | Geen feestdagen gevonden in de komende {{ maxHolidays }} {{ maxHolidays === 1 ? 'dag' : 'dagen' }}.
+  
+  v-snackbar(
+    v-model="showToast"
+    :timeout="3000"
+    location="bottom"
+  )
+    | Deze dag heeft (nog) geen aparte website
   </template>
 
 <script>
@@ -136,7 +165,8 @@ export default {
       isLookupMode: false,
       hidePastHolidays: true,
       selectedTypes: [],
-      searchText: ''
+      searchText: '',
+      showToast: false
     }
   },
   
@@ -144,6 +174,20 @@ export default {
     allTypes() {
       const types = [...new Set(this.allHolidays.map(h => h.type))]
       return types.sort()
+    },
+    
+    allTypesWithIcons() {
+      const typeIconMap = {}
+      this.allHolidays.forEach(h => {
+        if (!typeIconMap[h.type]) {
+          typeIconMap[h.type] = h.icon
+        }
+      })
+      
+      return this.allTypes.map(type => ({
+        type: type,
+        icon: typeIconMap[type] || 'mdi-calendar'
+      }))
     },
     
     filteredHolidays() {
@@ -375,7 +419,13 @@ export default {
     openLink(holiday) {
       if (holiday.link) {
         window.open(holiday.link, '_blank', 'noopener,noreferrer')
+      } else {
+        this.showToast = true
       }
+    },
+    
+    openSuggestionForm() {
+      window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhckWxlz8X8qezLuUhImog4rW0KXXNojAThOd2akLe5JcAsA/viewform?usp=publish-editor', '_blank', 'noopener,noreferrer')
     }
   },
   
@@ -442,6 +492,16 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Campton', sans-serif !important;
 }
 
+v-subheader,
+v-subheader.text-h4 {
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+  color: #666666 !important;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .clickable {
   cursor: pointer;
 }
@@ -454,7 +514,33 @@ h1, h2, h3, h4, h5, h6,
   padding: 24px !important;
 }
 
+html:not(.lookup-mode) .v-card {
+  margin-bottom: 0 !important;
+}
+
+html:not(.lookup-mode) .v-main {
+  padding-bottom: 0 !important;
+}
+
+html.lookup-mode .v-container {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+}
+
 .v-list-item-title {
   font-size: 1.1rem !important;
+}
+
+.v-list-item__prepend {
+  margin-right: -8px !important;
+}
+
+.v-list-item__prepend > .v-icon {
+  margin-inline-end: 0 !important;
+}
+
+.v-chip .v-icon {
+  margin-left: 4px !important;
+  margin-right: 4px !important;
 }
 </style>

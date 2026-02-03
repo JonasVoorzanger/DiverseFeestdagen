@@ -7,6 +7,13 @@
     "icon": "mdi-calendar-star"
   },
   {
+    "naam": "Driekoningen",
+    "type": "Christendom",
+    "datum": "2026-01-04",
+    "link": "https://nl.wikipedia.org/wiki/Driekoningen",
+    "icon": "mdi-cross"
+  },
+  {
     "naam": "Internationale dag van het onderwijs",
     "type": "VN",
     "datum": "2026-01-24",
@@ -56,6 +63,20 @@
     "icon": "mdi-party-popper"
   },
   {
+    "naam": "Begin Olympische Winterspelen",
+    "type": "Sport",
+    "datum": "2026-02-06",
+    "link": "https://nl.wikipedia.org/wiki/Olympische_Winterspelen",
+    "icon": "mdi-stadium-variant"
+  },
+  {
+    "naam": "Begin Theaterweek",
+    "type": "HAL",
+    "datum": "2026-02-09",
+    "link": "",
+    "icon": "mdi-school"
+  },
+  {
     "naam": "Internationale dag van vrouwen en meisjes in de wetenschap",
     "type": "VN",
     "datum": "2026-02-11",
@@ -77,6 +98,20 @@
     "icon": "mdi-calendar-star"
   },
   {
+    "naam": "Start Carnaval",
+    "type": "Christendom",
+    "datum": "2026-02-14",
+    "link": "https://nl.wikipedia.org/wiki/Carnaval",
+    "icon": "mdi-cross"
+  },
+  {
+    "naam": "Dies",
+    "type": "HAL",
+    "datum": "2026-02-14",
+    "link": "https://amsterdamslyceum.nl/leerlingen/oud-leerling-organisatie/",
+    "icon": "mdi-school"
+  },
+  {
     "naam": "Maha Shivaratri",
     "type": "Hindoe",
     "datum": "2026-02-16",
@@ -84,11 +119,25 @@
     "icon": "mdi-om"
   },
   {
+    "naam": "Begin 1e klas Moordproject",
+    "type": "HAL",
+    "datum": "2026-02-16",
+    "link": "",
+    "icon": "mdi-school"
+  },
+  {
     "naam": "Begin Ramadan",
     "type": "Islam",
     "datum": "2026-02-18",
     "link": "https://nl.wikipedia.org/wiki/Ramadan",
     "icon": "mdi-moon-waning-crescent"
+  },
+  {
+    "naam": "Aswoensdag",
+    "type": "Christendom",
+    "datum": "2026-02-18",
+    "link": "https://nl.wikipedia.org/wiki/Aswoensdag",
+    "icon": "mdi-cross"
   },
   {
     "naam": "Werelddag voor sociale rechtvaardigheid",
@@ -138,6 +187,20 @@
     "datum": "2026-03-08",
     "link": "https://www.un.org/en/observances/womens-day",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Begin Boekenweek",
+    "type": "Fun",
+    "datum": "2026-03-11",
+    "link": "https://nl.wikipedia.org/wiki/Boekenweek",
+    "icon": "mdi-party-popper"
+  },
+  {
+    "naam": "Pi Dag",
+    "type": "Fun",
+    "datum": "2026-03-14",
+    "link": "https://en.wikipedia.org/wiki/Pi_Day",
+    "icon": "mdi-party-popper"
   },
   {
     "naam": "Internationale dag ter bestrijding van islamofobie",
@@ -231,6 +294,13 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Artistieke Interlyceale in Amsterdam",
+    "type": "HAL",
+    "datum": "2026-03-27",
+    "link": "",
+    "icon": "mdi-school"
+  },
+  {
     "naam": "Internationale afvalvrije dag",
     "type": "VN",
     "datum": "2026-03-30",
@@ -301,6 +371,13 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Jaarlijkse herdenking in de aula",
+    "type": "HAL",
+    "datum": "2026-04-17",
+    "link": "",
+    "icon": "mdi-school"
+  },
+  {
     "naam": "Werelddag van de creativiteit en innovatie",
     "type": "VN",
     "datum": "2026-04-21",
@@ -312,20 +389,6 @@
     "type": "VN",
     "datum": "2026-04-22",
     "link": "https://www.un.org/en/observances/earth-day",
-    "icon": "mdi-earth"
-  },
-  {
-    "naam": "Dag van de Engelse taal",
-    "type": "VN",
-    "datum": "2026-04-23",
-    "link": "https://www.un.org/en/observances/english-language-day",
-    "icon": "mdi-earth"
-  },
-  {
-    "naam": "Dag van de Spaanse taal",
-    "type": "VN",
-    "datum": "2026-04-23",
-    "link": "https://www.un.org/es/observances/spanish-language-day",
     "icon": "mdi-earth"
   },
   {
@@ -385,11 +448,25 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Nationale Dodenherdenking",
+    "type": "Algemeen",
+    "datum": "2026-05-04",
+    "link": "https://nl.wikipedia.org/wiki/Nationale_Dodenherdenking",
+    "icon": "mdi-calendar-star"
+  },
+  {
     "naam": "Bevrijdingsdag",
     "type": "Algemeen",
     "datum": "2026-05-05",
     "link": "https://nl.wikipedia.org/wiki/Bevrijdingsdag",
     "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Begin Giro d’Italia",
+    "type": "Sport",
+    "datum": "2026-05-08",
+    "link": "https://nl.wikipedia.org/wiki/Ronde_van_Itali%C3%AB",
+    "icon": "mdi-stadium-variant"
   },
   {
     "naam": "Moederdag",
@@ -418,6 +495,13 @@
     "datum": "2026-05-16",
     "link": "https://www.unesco.org/en/days/light",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Begin Roland Garros",
+    "type": "Sport",
+    "datum": "2026-05-18",
+    "link": "https://nl.wikipedia.org/wiki/Roland_Garros_(tennistoernooi)",
+    "icon": "mdi-stadium-variant"
   },
   {
     "naam": "Werelddag voor bijen",
@@ -469,6 +553,13 @@
     "icon": "mdi-moon-waning-crescent"
   },
   {
+    "naam": "Pop & Poëzie",
+    "type": "HAL",
+    "datum": "2026-05-29",
+    "link": "",
+    "icon": "mdi-school"
+  },
+  {
     "naam": "Internationale dag van de aardappel",
     "type": "VN",
     "datum": "2026-05-30",
@@ -504,6 +595,13 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Begin WK Voetbal",
+    "type": "Sport",
+    "datum": "2026-06-11",
+    "link": "https://nl.wikipedia.org/wiki/Wereldkampioenschap_voetbal",
+    "icon": "mdi-stadium-variant"
+  },
+  {
     "naam": "Werelddag tegen kinderarbeid",
     "type": "VN",
     "datum": "2026-06-12",
@@ -537,6 +635,34 @@
     "datum": "2026-06-20",
     "link": "https://www.un.org/en/observances/refugee-day",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Begin Wimbledon",
+    "type": "Sport",
+    "datum": "2026-06-29",
+    "link": "https://nl.wikipedia.org/wiki/Wimbledon_(tennistoernooi)",
+    "icon": "mdi-stadium-variant"
+  },
+  {
+    "naam": "Eindfeest",
+    "type": "HAL",
+    "datum": "2026-06-29",
+    "link": "",
+    "icon": "mdi-school"
+  },
+  {
+    "naam": "Ketikoti (Afschaffing slavernij)",
+    "type": "Algemeen",
+    "datum": "2026-07-01",
+    "link": "https://nl.wikipedia.org/wiki/Ketikoti",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Begin Tour de France",
+    "type": "Sport",
+    "datum": "2026-07-04",
+    "link": "https://nl.wikipedia.org/wiki/Ronde_van_Frankrijk",
+    "icon": "mdi-stadium-variant"
   },
   {
     "naam": "Internationale dag van bezinning en herdenking van de genocide in Srebrenica in 1995",
@@ -581,6 +707,13 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Pride March",
+    "type": "Amsterdam",
+    "datum": "2026-07-25",
+    "link": "https://www.iamsterdam.com/uit/agenda/festivals/events/pride-march-2026",
+    "icon": "mdi-bicycle"
+  },
+  {
     "naam": "Asalha Puja",
     "type": "Boeddhisme",
     "datum": "2026-07-29",
@@ -593,6 +726,13 @@
     "datum": "2026-07-30",
     "link": "https://www.un.org/en/observances/friendship-day",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Canal Parade (Pride)",
+    "type": "Amsterdam",
+    "datum": "2026-08-01",
+    "link": "https://pride.amsterdam/en/event/canal-parade/",
+    "icon": "mdi-bicycle"
   },
   {
     "naam": "Internationale dag ter herinnering aan de slavenhandel en de afschaffing ervan [UNESCO]",
@@ -651,6 +791,13 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Prinsjesdag",
+    "type": "Algemeen",
+    "datum": "2026-09-15",
+    "link": "https://nl.wikipedia.org/wiki/Prinsjesdag",
+    "icon": "mdi-calendar-star"
+  },
+  {
     "naam": "Internationale dag van gelijke verloning",
     "type": "VN",
     "datum": "2026-09-18",
@@ -663,6 +810,13 @@
     "datum": "2026-09-20",
     "link": "https://www.un.org/en/observances/cleanup-day",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Dam tot Damloop",
+    "type": "Amsterdam",
+    "datum": "2026-09-20",
+    "link": "https://www.nndamloop.nl/programma",
+    "icon": "mdi-bicycle"
   },
   {
     "naam": "Jom Kipoer (Grote Verzoendag)",
@@ -721,6 +875,20 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Eerste Open Monumentendag",
+    "type": "Fun",
+    "datum": "2026-10-12",
+    "link": "https://www.iamsterdam.com/uit/agenda/festivals/events/open-monumentendag-amsterdam",
+    "icon": "mdi-party-popper"
+  },
+  {
+    "naam": "Tweede Open Monumentendag",
+    "type": "Fun",
+    "datum": "2026-10-13",
+    "link": "https://www.iamsterdam.com/uit/agenda/festivals/events/open-monumentendag-amsterdam",
+    "icon": "mdi-party-popper"
+  },
+  {
     "naam": "Wereldvoedseldag",
     "type": "VN",
     "datum": "2026-10-16",
@@ -733,6 +901,34 @@
     "datum": "2026-10-17",
     "link": "https://www.un.org/en/observances/day-for-eradicating-poverty",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Klassiek op het Amstelveld",
+    "type": "Fun",
+    "datum": "2026-10-18",
+    "link": "https://www.iamsterdam.com/uit/agenda/festivals/events/klassiek-op-het-amstelveld",
+    "icon": "mdi-party-popper"
+  },
+  {
+    "naam": "Marathon van Amsterdam",
+    "type": "Amsterdam",
+    "datum": "2026-10-18",
+    "link": "https://www.tcsamsterdammarathon.eu/",
+    "icon": "mdi-bicycle"
+  },
+  {
+    "naam": "Klassiek op het Amstelveld",
+    "type": "Fun",
+    "datum": "2026-10-19",
+    "link": "https://www.iamsterdam.com/uit/agenda/festivals/events/klassiek-op-het-amstelveld",
+    "icon": "mdi-party-popper"
+  },
+  {
+    "naam": "Begin Amsterdam Dance Event",
+    "type": "Amsterdam",
+    "datum": "2026-10-21",
+    "link": "https://www.amsterdam-dance-event.nl/en/tickets/",
+    "icon": "mdi-bicycle"
   },
   {
     "naam": "CAPS LOCK DAY",
@@ -756,6 +952,13 @@
     "icon": "mdi-flag-variant"
   },
   {
+    "naam": "Museumnacht Amsterdam",
+    "type": "Amsterdam",
+    "datum": "2026-11-07",
+    "link": "https://museumnacht.amsterdam/",
+    "icon": "mdi-bicycle"
+  },
+  {
     "naam": "Divali (Lichtjesfeest)",
     "type": "Hindoe",
     "datum": "2026-11-08",
@@ -768,6 +971,13 @@
     "datum": "2026-11-10",
     "link": "https://www.un.org/en/observances/world-science-day",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Sint-Maarten",
+    "type": "Algemeen",
+    "datum": "2026-11-11",
+    "link": "https://nl.wikipedia.org/wiki/Sint-Maarten_(feest)",
+    "icon": "mdi-calendar-star"
   },
   {
     "naam": "Wereldtoiletdag",
@@ -796,6 +1006,13 @@
     "datum": "2026-11-22",
     "link": "https://en.wikipedia.org/wiki/Buy_Nothing_Day",
     "icon": "mdi-party-popper"
+  },
+  {
+    "naam": "Begin Amsterdam Light Festival",
+    "type": "Amsterdam",
+    "datum": "2026-11-26",
+    "link": "https://amsterdamlightfestival.com/nl",
+    "icon": "mdi-bicycle"
   },
   {
     "naam": "Internationale dag van solidariteit met het Palestijnse volk",
@@ -840,6 +1057,13 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Sinterklaasavond",
+    "type": "Algemeen",
+    "datum": "2026-12-05",
+    "link": "https://nl.wikipedia.org/wiki/Sinterklaas",
+    "icon": "mdi-calendar-star"
+  },
+  {
     "naam": "Internationale dag voor herdenking en waardigheid van slachtoffers van genocide",
     "type": "VN",
     "datum": "2026-12-09",
@@ -859,6 +1083,13 @@
     "datum": "2026-12-10",
     "link": "https://www.un.org/en/observances/human-rights-day",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Vrolijke Vrijdag",
+    "type": "HAL",
+    "datum": "2026-12-11",
+    "link": "",
+    "icon": "mdi-school"
   },
   {
     "naam": "Internationale dag tegen kolonialisme in al zijn vormen en manifestaties",
