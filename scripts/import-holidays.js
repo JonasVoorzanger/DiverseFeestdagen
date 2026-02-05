@@ -14,7 +14,7 @@ const TYPE_ICONS = {
   'Islam': 'mdi-moon-waning-crescent',
   'VN': 'mdi-earth',
   'Boeddhisme': 'mdi-meditation',
-  'Joods': 'mdi-star-david',
+  'Jodendom': 'mdi-star-david',
   'Hindoe': 'mdi-om',
   'Algemeen': 'mdi-calendar-star',
   'Iers': 'mdi-clover',
