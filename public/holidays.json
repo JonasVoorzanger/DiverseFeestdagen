@@ -735,6 +735,13 @@
     "icon": "mdi-bicycle"
   },
   {
+    "naam": "Ferragosto",
+    "type": "Italië",
+    "datum": "2026-08-15",
+    "link": "https://nl.wikipedia.org/wiki/Ferragosto",
+    "icon": "mdi-glass-wine"
+  },
+  {
     "naam": "Internationale dag ter herinnering aan de slavenhandel en de afschaffing ervan [UNESCO]",
     "type": "VN",
     "datum": "2026-08-23",
@@ -1008,6 +1015,13 @@
     "icon": "mdi-party-popper"
   },
   {
+    "naam": "Srefidensi Dey (Surinaamse onafhankelijkheid)",
+    "type": "Algemeen",
+    "datum": "2026-11-25",
+    "link": "https://nl.wikipedia.org/wiki/Srefidensi_Dey",
+    "icon": "mdi-calendar-star"
+  },
+  {
     "naam": "Begin Amsterdam Light Festival",
     "type": "Amsterdam",
     "datum": "2026-11-26",
@@ -1118,6 +1132,13 @@
     "datum": "2026-12-21",
     "link": "https://www.un.org/en/observances/meditation-day",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Kerstavond",
+    "type": "Christendom",
+    "datum": "2026-12-24",
+    "link": "https://nl.wikipedia.org/wiki/Kerstavond",
+    "icon": "mdi-cross"
   },
   {
     "naam": "Eerste Kerstdag",

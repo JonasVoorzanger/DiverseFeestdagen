@@ -18,6 +18,7 @@ const TYPE_ICONS = {
   'Hindoe': 'mdi-om',
   'Algemeen': 'mdi-calendar-star',
   'Iers': 'mdi-clover',
+  'Italië': 'mdi-glass-wine',
   'Christendom': 'mdi-cross',
   'Amerikaans': 'mdi-flag-variant',
   'Fun': 'mdi-party-popper',
