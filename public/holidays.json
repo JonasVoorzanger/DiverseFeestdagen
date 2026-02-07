@@ -14,6 +14,34 @@
     "icon": "mdi-cross"
   },
   {
+    "naam": "Wereld Logicadag",
+    "type": "Algemeen",
+    "datum": "2026-01-14",
+    "link": "https://www.unesco.org/en/days/world-logic",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Lailat-ul-Meraj (Hemelvaart van de Profeet)",
+    "type": "Islam",
+    "datum": "2026-01-16",
+    "link": "https://weetwatjeviert.nl/alle-feestdagen/hemelvaart-van-de-profeet/",
+    "icon": "mdi-moon-waning-crescent"
+  },
+  {
+    "naam": "Blauwe Maandag",
+    "type": "Fun",
+    "datum": "2026-01-19",
+    "link": "https://www.fijnedagvan.nl/info/blue-monday/",
+    "icon": "mdi-party-popper"
+  },
+  {
+    "naam": "Dag van het handschrift",
+    "type": "Fun",
+    "datum": "2026-01-23",
+    "link": "https://www.fijnedagvan.nl/info/internationale-dag-van-het-handschrift/",
+    "icon": "mdi-party-popper"
+  },
+  {
     "naam": "Internationale dag van het onderwijs",
     "type": "VN",
     "datum": "2026-01-24",
@@ -126,6 +154,13 @@
     "icon": "mdi-school"
   },
   {
+    "naam": "Chinees Nieuwjaar",
+    "type": "China",
+    "datum": "2026-02-17",
+    "link": "https://weetwatjeviert.nl/alle-feestdagen/chinees-nieuwjaar/",
+    "icon": "mdi-ideogram-cjk-variant"
+  },
+  {
     "naam": "Begin Ramadan",
     "type": "Islam",
     "datum": "2026-02-18",
@@ -147,6 +182,27 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "World Thinking Day",
+    "type": "Fun",
+    "datum": "2026-02-21",
+    "link": "https://www.wagggs.org/en/what-we-do/world-thinking-day/",
+    "icon": "mdi-party-popper"
+  },
+  {
+    "naam": "Dag van de Moedertaal",
+    "type": "VN",
+    "datum": "2026-02-21",
+    "link": "https://www.un.org/en/observances/mother-language-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "Yan Yat",
+    "type": "China",
+    "datum": "2026-02-23",
+    "link": "https://weetwatjeviert.nl/alle-feestdagen/yan-yat/",
+    "icon": "mdi-ideogram-cjk-variant"
+  },
+  {
     "naam": "Antidiscriminatiedag",
     "type": "VN",
     "datum": "2026-03-01",
@@ -166,6 +222,13 @@
     "datum": "2026-03-03",
     "link": "https://nl.wikipedia.org/wiki/Poerim",
     "icon": "mdi-star-david"
+  },
+  {
+    "naam": "Lantaarnfeest",
+    "type": "China",
+    "datum": "2026-03-03",
+    "link": "https://nl.wikipedia.org/wiki/Lantaarnfeest",
+    "icon": "mdi-ideogram-cjk-variant"
   },
   {
     "naam": "Holi (Lentefeest)",
@@ -210,8 +273,15 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Lailat al Qadr",
+    "type": "Islam",
+    "datum": "2026-03-16",
+    "link": "https://weetwatjeviert.nl/alle-feestdagen/lailat-al-qadr-kadir-gecesi-nacht-van-de-beslissing/",
+    "icon": "mdi-moon-waning-crescent"
+  },
+  {
     "naam": "Saint Patrick's Day",
-    "type": "Iers",
+    "type": "Ierland",
     "datum": "2026-03-17",
     "link": "https://nl.wikipedia.org/wiki/Saint_Patrick%27s_Day",
     "icon": "mdi-clover"
@@ -428,10 +498,10 @@
   },
   {
     "naam": "Dag van de Arbeid",
-    "type": "Algemeen",
+    "type": "Boeddhisme",
     "datum": "2026-05-01",
     "link": "https://nl.wikipedia.org/wiki/Dag_van_de_Arbeid",
-    "icon": "mdi-calendar-star"
+    "icon": "mdi-meditation"
   },
   {
     "naam": "Vesak Puja (Geboorte van Boeddha)",
@@ -637,6 +707,27 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Vaderdag",
+    "type": "Algemeen",
+    "datum": "2026-06-21",
+    "link": "https://weetwatjeviert.nl/alle-feestdagen/vaderdag/",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Zonnewende",
+    "type": "Algemeen",
+    "datum": "2026-06-21",
+    "link": "https://nl.wikipedia.org/wiki/Zonnewende",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Roze Zaterdag",
+    "type": "Algemeen",
+    "datum": "2026-06-27",
+    "link": "https://weetwatjeviert.nl/alle-feestdagen/roze-zaterdag/",
+    "icon": "mdi-calendar-star"
+  },
+  {
     "naam": "Begin Wimbledon",
     "type": "Sport",
     "datum": "2026-06-29",
@@ -756,6 +847,13 @@
     "icon": "mdi-moon-waning-crescent"
   },
   {
+    "naam": "Raksha Bandhan",
+    "type": "Hindoe",
+    "datum": "2026-08-28",
+    "link": "https://weetwatjeviert.nl/alle-feestdagen/raksha-bandhan/",
+    "icon": "mdi-om"
+  },
+  {
     "naam": "Internationale dag tegen kernproeven",
     "type": "VN",
     "datum": "2026-08-29",
@@ -868,6 +966,20 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "Weekend van de wetenschap",
+    "type": "Algemeen",
+    "datum": "2026-10-03",
+    "link": "https://weekendvandewetenschap.nl/",
+    "icon": "mdi-calendar-star"
+  },
+  {
+    "naam": "Weekend van de wetenschap",
+    "type": "Algemeen",
+    "datum": "2026-10-04",
+    "link": "https://weekendvandewetenschap.nl/",
+    "icon": "mdi-calendar-star"
+  },
+  {
     "naam": "Dierendag",
     "type": "Algemeen",
     "datum": "2026-10-04",
@@ -880,6 +992,20 @@
     "datum": "2026-10-05",
     "link": "https://www.unesco.org/en/days/teachers",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Dag van de Duitse taal",
+    "type": "Duitsland",
+    "datum": "2026-10-06",
+    "link": "https://machmit.nl/dag-van-de-duitse-taal/over-de-dag-van-de-duitse-taal",
+    "icon": "mdi-glass-mug"
+  },
+  {
+    "naam": "Coming-Outdag",
+    "type": "Algemeen",
+    "datum": "2026-10-11",
+    "link": "https://weetwatjeviert.nl/alle-feestdagen/coming-outdag/",
+    "icon": "mdi-calendar-star"
   },
   {
     "naam": "Eerste Open Monumentendag",
@@ -952,11 +1078,32 @@
     "icon": "mdi-earth"
   },
   {
+    "naam": "World Coding Day",
+    "type": "VN",
+    "datum": "2026-10-29",
+    "link": "https://www.unesco.org/en/days/coding?hub=180536",
+    "icon": "mdi-earth"
+  },
+  {
     "naam": "Halloween",
-    "type": "Amerikaans",
+    "type": "Amerika",
     "datum": "2026-10-31",
     "link": "https://nl.wikipedia.org/wiki/Halloween",
     "icon": "mdi-flag-variant"
+  },
+  {
+    "naam": "Allerheiligen",
+    "type": "Christendom",
+    "datum": "2026-11-01",
+    "link": "https://weetwatjeviert.nl/alle-feestdagen/allerheiligen/",
+    "icon": "mdi-cross"
+  },
+  {
+    "naam": "Allerzielen",
+    "type": "Christendom",
+    "datum": "2026-11-02",
+    "link": "https://weetwatjeviert.nl/alle-feestdagen/allerzielen/",
+    "icon": "mdi-cross"
   },
   {
     "naam": "Museumnacht Amsterdam",
@@ -1003,7 +1150,7 @@
   {
     "naam": "Werelddag voor de filosofie",
     "type": "VN",
-    "datum": "2026-11-21",
+    "datum": "2026-11-20",
     "link": "https://www.unesco.org/en/days/philosophy",
     "icon": "mdi-earth"
   },
@@ -1047,6 +1194,13 @@
     "type": "VN",
     "datum": "2026-12-02",
     "link": "https://www.un.org/en/observances/slavery-abolition-day",
+    "icon": "mdi-earth"
+  },
+  {
+    "naam": "World Futures Day",
+    "type": "VN",
+    "datum": "2026-12-02",
+    "link": "https://www.unesco.org/en/days/world-futures?hub=180536",
     "icon": "mdi-earth"
   },
   {
