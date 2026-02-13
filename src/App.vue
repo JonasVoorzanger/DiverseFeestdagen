@@ -172,7 +172,8 @@ export default {
       hidePastHolidays: true,
       selectedTypes: [],
       searchText: '',
-      showToast: false
+      showToast: false,
+      autoReloadInterval: null
     }
   },
   
@@ -439,6 +440,22 @@ export default {
     this.loadHolidays()
     if (this.isLookupMode) {
       document.documentElement.classList.add('lookup-mode')
+    }
+    
+    // Auto-reload every hour (3600000 milliseconds)
+    this.autoReloadInterval = setInterval(() => {
+      window.location.href = window.location.href
+    }, 3600000)    
+    // Expose reload function to console for testing
+    window.testReload = () => {
+      console.log('Manual reload triggered from console')
+      window.location.href = window.location.href
+    }  },
+  
+  beforeUnmount() {
+    // Clean up the interval when component is destroyed
+    if (this.autoReloadInterval) {
+      clearInterval(this.autoReloadInterval)
     }
   },
   
