@@ -396,7 +396,14 @@ export default {
           this.searchText = searchParam
         }
         
-        const response = await fetch('/DiverseFeestdagen/holidays.json')
+        // Add cache-busting timestamp to prevent stale data
+        const cacheBuster = new Date().getTime()
+        const response = await fetch(`/DiverseFeestdagen/holidays.json?v=${cacheBuster}`, {
+          cache: 'no-store',
+          headers: {
+            'Cache-Control': 'no-cache'
+          }
+        })
         
         if (!response.ok) {
           throw new Error('Kon feestdagen niet laden')
@@ -442,15 +449,30 @@ export default {
       document.documentElement.classList.add('lookup-mode')
     }
     
-    // Auto-reload every hour (3600000 milliseconds)
+    // Check for custom reload interval from URL (in minutes), default to 60 minutes
+    const reloadParam = this.getUrlParameter('reload')
+    let reloadMinutes = 60
+    if (reloadParam) {
+      const parsed = parseInt(reloadParam)
+      if (!isNaN(parsed) && parsed > 0) {
+        reloadMinutes = parsed
+      }
+    }
+    
+    // Auto-reload at specified interval
+    const reloadInterval = reloadMinutes * 60 * 1000
+    console.log(`Auto-reload enabled: every ${reloadMinutes} minute(s)`)
     this.autoReloadInterval = setInterval(() => {
-      window.location.href = window.location.href
-    }, 3600000)    
+      console.log('Auto-reloading page...')
+      window.location.href = window.location.href + (window.location.href.includes('?') ? '&' : '?') + '_reload=' + Date.now()
+    }, reloadInterval)
+    
     // Expose reload function to console for testing
     window.testReload = () => {
       console.log('Manual reload triggered from console')
-      window.location.href = window.location.href
-    }  },
+      window.location.href = window.location.href + (window.location.href.includes('?') ? '&' : '?') + '_reload=' + Date.now()
+    }
+  },
   
   beforeUnmount() {
     // Clean up the interval when component is destroyed
