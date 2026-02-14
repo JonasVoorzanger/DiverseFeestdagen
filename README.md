@@ -80,6 +80,35 @@ De applicatie is geconfigureerd met open CORS headers, zodat de content door ied
 - Material Design iconen
 - Pug templating voor cleane templates
 
+## URL Parameters
+
+De applicatie ondersteunt verschillende URL parameters om het gedrag aan te passen:
+
+### Auto-reload
+
+Voeg `?reload=10` toe aan de URL om de pagina automatisch elke 10 minuten te verversen:
+
+```
+https://username.github.io/DiverseFeestdagen/?reload=10
+```
+
+- De waarde staat voor minuten tussen elke reload
+- Standaard: 60 minuten (als geen parameter opgegeven is)
+- Bijvoorbeeld: `?reload=5` voor elke 5 minuten
+
+### Andere parameters
+
+- `n` - Aantal feestdagen om te tonen (standaard: 5)
+- `lookup` - Schakel naar lookup mode (`?lookup=true`)
+- `types` - Filter op type(n) (`?types=Algemeen,Fun`)
+- `search` - Zoek op naam (`?search=kerst`)
+- `showPast` - Toon verleden feestdagen (`?showPast=true`)
+
+Parameters kunnen gecombineerd worden met `&`:
+```
+?reload=10&n=8&lookup=true
+```
+
 ## Licentie
 
 Open source - vrij te gebruiken
