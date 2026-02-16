@@ -105,11 +105,25 @@
     "icon": "mdi-school"
   },
   {
+    "naam": "Warme truiendag",
+    "type": "Fun",
+    "datum": "2026-02-10",
+    "link": "https://warmetruiendag.nl/",
+    "icon": "mdi-party-popper"
+  },
+  {
     "naam": "Internationale dag van vrouwen en meisjes in de wetenschap",
     "type": "VN",
     "datum": "2026-02-11",
     "link": "https://www.un.org/en/observances/women-and-girls-in-science-day/",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Darwin day",
+    "type": "Fun",
+    "datum": "2026-02-12",
+    "link": "https://darwinday.org/",
+    "icon": "mdi-party-popper"
   },
   {
     "naam": "Wereldradiodag",
@@ -371,6 +385,13 @@
     "icon": "mdi-school"
   },
   {
+    "naam": "Earth Hour",
+    "type": "Algemeen",
+    "datum": "2026-03-28",
+    "link": "https://www.earthhour.org/faqs",
+    "icon": "mdi-calendar-star"
+  },
+  {
     "naam": "Internationale afvalvrije dag",
     "type": "VN",
     "datum": "2026-03-30",
@@ -525,6 +546,13 @@
     "icon": "mdi-calendar-star"
   },
   {
+    "naam": "Star Wars day (May the fourth be with you)",
+    "type": "Fun",
+    "datum": "2026-05-04",
+    "link": "https://en.wikipedia.org/wiki/Star_Wars_Day",
+    "icon": "mdi-party-popper"
+  },
+  {
     "naam": "Bevrijdingsdag",
     "type": "Algemeen",
     "datum": "2026-05-05",
@@ -593,6 +621,13 @@
     "datum": "2026-05-22",
     "link": "https://nl.wikipedia.org/wiki/Sjavoeot",
     "icon": "mdi-star-david"
+  },
+  {
+    "naam": "Internationale dag van de biodiversiteit",
+    "type": "VN",
+    "datum": "2026-05-22",
+    "link": "https://www.un.org/en/observances/biological-diversity-day",
+    "icon": "mdi-earth"
   },
   {
     "naam": "Eerste Pinksterdag",
