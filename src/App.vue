@@ -96,7 +96,7 @@ v-app
             
             div(v-else)
               div(v-if="groupedHolidays.today.length > 0")
-                v-subheader.text-h4.mb-2 Vandaag
+                v-subheader.text-h4.mb-2 Vandaag!
                 v-list
                   v-list-item(
                     v-for="(item, index) in groupedHolidays.today"
