@@ -1349,5 +1349,40 @@
     "datum": "2026-12-27",
     "link": "https://www.un.org/en/observances/epidemic-preparedness-day",
     "icon": "mdi-earth"
+  },
+  {
+    "naam": "Begin voorjaarsvakantie",
+    "type": "Fun",
+    "datum": "2026-02-21",
+    "link": "https://www.rijksoverheid.nl/onderwerpen/schoolvakanties/overzicht-schoolvakanties-per-schooljaar",
+    "icon": "mdi-party-popper"
+  },
+  {
+    "naam": "Begin meivakantie",
+    "type": "Fun",
+    "datum": "2026-04-25",
+    "link": "https://www.rijksoverheid.nl/onderwerpen/schoolvakanties/overzicht-schoolvakanties-per-schooljaar",
+    "icon": "mdi-party-popper"
+  },
+  {
+    "naam": "Begin zomervakantie",
+    "type": "Fun",
+    "datum": "2026-07-04",
+    "link": "https://www.rijksoverheid.nl/onderwerpen/schoolvakanties/overzicht-schoolvakanties-per-schooljaar",
+    "icon": "mdi-party-popper"
+  },
+  {
+    "naam": "Begin herfstvakantie",
+    "type": "Fun",
+    "datum": "2026-12-19",
+    "link": "https://www.rijksoverheid.nl/onderwerpen/schoolvakanties/overzicht-schoolvakanties-per-schooljaar",
+    "icon": "mdi-party-popper"
+  },
+  {
+    "naam": "Begin kerstvakantie",
+    "type": "Fun",
+    "datum": "2026-10-10",
+    "link": "https://www.rijksoverheid.nl/onderwerpen/schoolvakanties/overzicht-schoolvakanties-per-schooljaar",
+    "icon": "mdi-party-popper"
   }
 ]
